@@ -21,7 +21,6 @@ app.get('/category/:id', (req, res) => {
     const id = req.params.id;
         const course = courses.filter(n => n.category_id === id)
         res.send(course)
-    
 })
 
 
