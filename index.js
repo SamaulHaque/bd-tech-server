@@ -6,14 +6,14 @@ const port = 5000;
 
 app.use(cors());
 
-const courses = require('./data/courses.json')
+const categories = require('./data/categories.json')
 
 app.get('/', (req, res) => {
     res.send('bd tech server is running')
 })
 
-app.get('/courses', (req, res) => {
-    res.send(courses)
+app.get('/categories', (req, res) => {
+    res.send(categories)
 })
 
 app.get('/courses/:id', (req, res) => {
